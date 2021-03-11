@@ -1,0 +1,32 @@
+.itemHistory {
+  margin: 0 auto;
+  width: 800px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headingList {
+  background-color: rgb(0, 214, 214);
+  height: 50px;
+}
+
+.headingItem {
+  border: thick white;
+  text-transform: uppercase;
+}
+
+.transact::first-letter {
+  text-transform: uppercase;
+}
+
+.itemList:nth-child(even) {
+  background-color: rgb(236, 236, 236);
+}
+
+.itemList {
+  height: 50px;
+}
+
+.transact {
+  text-align: center;
+  width: 265px;
+}

@@ -1,0 +1,36 @@
+.profile {
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  width: 300px;
+  border-left: 0.1rem solid;
+  border-right: 0.1rem solid;
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.imgProfile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profileinfo {
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  font-weight: 700;
+  font-size: larger;
+  font-style: normal;
+}

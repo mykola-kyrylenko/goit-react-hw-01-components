@@ -1,0 +1,23 @@
+import s from './Statistics.module.css';
+
+function Statistics({ title="Upload stats", stats, color}) {
+    return (
+        <section className={s.statistics}>
+            <h2 className={s.title}>{title}</h2>
+
+            <ul className={s.statList}>
+                {stats.map(stat => (
+                    <li className={s.stat} key={stat.id} style={{ backgroundColor: `${color}` }}>
+                        <span className={s.label}>{stat.label}</span>
+                        <span className={s.percentage}>{stat.percentage}%</span>
+                    </li>
+                ))}
+            </ul>
+        </section>
+
+    );
+};
+
+
+
+export default Statistics;
