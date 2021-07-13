@@ -1,30 +1,40 @@
 import s from './TransactionHistory.module.css';
+import PropTypes from 'prop-types';
 
 function itemHistory({ items }) {
     return (
         <table className={s.itemHistory}>
-                <thead>
-                    <tr className={s.headingList}>
-                        <th className={s.headingItem}>Type</th>
-                        <th className={s.headingItem}>Amount</th>
-                        <th className={s.headingItem}>Currency</th>
+            <thead>
+                <tr className={s.headingList}>
+                    <th className={s.headingItem}>Type</th>
+                    <th className={s.headingItem}>Amount</th>
+                    <th className={s.headingItem}>Currency</th>
+                </tr>
+            </thead>
+            <tbody>
+                {items.map(item => (
+                    <tr className={s.itemList} key={item.id}>
+                        <td className={s.transact}>{item.type}</td>
+                        <td className={s.transact}>{item.amount}</td>
+                        <td className={s.transact}>{item.currency}</td>
                     </tr>
-                </thead>
-                <tbody>
-                    {items.map(item => (
-                        <tr className={s.itemList} key={item.id}>
-                            <td className={s.transact}>{item.type}</td>
-                            <td className={s.transact}>{item.amount}</td>
-                            <td className={s.transact}>{item.currency}</td>
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+                ))}
+            </tbody>
+        </table>
     );
 }
-  
 
-    
+
+itemHistory.propTypes = {
+    item: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number,
+
+    ]),
+
+};
+
+
 
 
 export default itemHistory;

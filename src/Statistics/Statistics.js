@@ -1,6 +1,6 @@
 import s from './Statistics.module.css';
 
-function Statistics({ title="Upload stats", stats, color}) {
+function Statistics({ title, stats, color }) {
     return (
         <section className={s.statistics}>
             <h2 className={s.title}>{title}</h2>
@@ -18,6 +18,8 @@ function Statistics({ title="Upload stats", stats, color}) {
     );
 };
 
-
+Statistics.defaultProps = {
+    title: "Upload stats",
+};
 
 export default Statistics;
