@@ -29,6 +29,8 @@ function App() {
       
       <Statistics
         stats={statisticalData}
+        title="Upload stats"
+
       // color={RandomColor()}
       />
 
