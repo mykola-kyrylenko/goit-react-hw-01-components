@@ -18,8 +18,8 @@ function Statistics({ title, stats, color }) {
     );
 };
 
-Statistics.defaultProps = {
-    title: "Upload stats",
-};
+// Statistics.defaultProps = {
+//     title: "Upload stats",
+// };
 
 export default Statistics;
